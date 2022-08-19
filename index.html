@@ -16,7 +16,7 @@
 	</style> 
 </head>
 <body>
-<form method="post">
+<!-- <form method="post"> -->
 	<div>
 	<table style="border:3px #cccccc solid;" cellpadding="10" border="1">
 		<thead>
@@ -126,19 +126,24 @@
 					<button onclick="alertEvent()">預測</button>
 					<input type="submit" value="提交">
 					<input type="reset" value="重設">
+					<button onClick={this.resetSearch}>Reset</button>
 					<!-- <button onclick="sweetalertclick()" type="button" class="w3-button w3-blue" >try me</button> -->
 				</td>
 			</tr>		
 		</tbody>
 	</table>
 	</div>
-	</form>
+	<!-- </form> -->
 
 </body>
 <script>
 	function alertEvent() {
-		alert("這個人很有可能流失!\n預計待的時長為8個月\n這個客戶屬於我們規劃的喜歡嘗試型\n建議在3個月後，可以推出精彩優惠方案，吸引此客戶續約，提高客戶終身價值");
+		alert("這個人很有可能流失!\n預計待的時長為8個月\n這個客戶屬於我們規劃的喜歡嘗試型。建議在3個月後，可以推出精彩優惠方案，吸引此客戶續約，提高客戶終身價值。");
 	}
+
+	resetSearch = () =>{
+  this.handleSearch('')
+}
 </script>
 
 <!-- <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js">
