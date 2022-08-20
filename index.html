@@ -21,7 +21,7 @@
 	<table style="border:3px #cccccc solid;" cellpadding="10" border="1">
 		<thead>
 			<tr>
-				<th colspan="3">客戶基本資料</th>
+				<th colspan="3"><h2 style="color:DodgerBlue;">客戶基本資料</h2></th>
 			</tr>
 		</thead>
 		<tbody>
@@ -44,11 +44,11 @@
 			</tr>
 
 			<tr>
-				<td>是否有配偶：
+				<td>是否有配偶：<br>
 					<input type="radio" name="partner" value="y">是
 					<input type="radio" name="partner" value="n">否
 				</td>
-				<td><label>是否有子女：
+				<td><label>是否有子女：<br>
 					<input type="radio" name="dependent" value="y">是
 					<input type="radio" name="dependent" value="n">否
 				</td>
@@ -124,10 +124,8 @@
 			<tr>
 				<td colspan="3">
 					<button onclick="alertEvent()">預測</button>
-					<input type="submit" value="提交">
-					<input type="reset" value="重設">
-					<!-- <button onClick={this.resetSearch}>Reset</button> -->
-					<!-- <button onclick="sweetalertclick()" type="button" class="w3-button w3-blue" >try me</button> -->
+					<input type="button" name="Submit" value="提交" class="btn" onclick="window.open('subPage.html')" />
+
 				</td>
 			</tr>		
 		</tbody>
@@ -141,17 +139,10 @@
 		alert("這個人很有可能流失!\n預計待的時長為8個月\n這個客戶屬於我們規劃的喜歡嘗試型。建議在3個月後，可以推出精彩優惠方案，吸引此客戶續約，提高客戶終身價值。");
 	}
 
-	resetSearch = () =>{
-  this.handleSearch('')
-}
+
 </script>
 
-<!-- <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js">
-	sweetAlert('Hello World!');
 
-	document.getElementById("demo1").addEventListener("click",function(){
-	  swal("Good job!", "You clicked the button!", "success");
-	});
 
-</script> -->
+
 </html>
